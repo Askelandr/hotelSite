@@ -296,8 +296,8 @@ main {
   margin-bottom: 20px;
   width: 277px;
   height: 367px;
-  background: url(https://www.hotrec.eu/wp-content/uploads/2018/04/accessibility.jpg)
-    no-repeat right center;
+  /* background: url(https://www.hotrec.eu/wp-content/uploads/2018/04/accessibility.jpg)
+    no-repeat right center; */
   background-size: cover;
   background-color: #2d312f;
   border-radius: 20px;
@@ -556,4 +556,18 @@ main {
   font-weight: 500;
   font-size: 14px;
   color: #ffffff;
+}
+.endbox__icon {
+  margin: auto;
+}
+.footer__svg {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+}
+.footer__svg__path {
+  fill: #ffffff;
+}
+.footer__svg__pathin {
+  fill: #f4694c;
 }
