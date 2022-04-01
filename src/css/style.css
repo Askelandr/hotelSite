@@ -87,6 +87,9 @@ body {
   }
 }
 .header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
   background-color: #f4694c;
   height: 117px;
   line-height: 117px;
@@ -130,6 +133,9 @@ body {
   background-color: #f58974;
 }
 /*-------------------------------------------------------------------------------------------------------------*/
+main {
+  margin-top: 117px;
+}
 .main__image {
   object-fit: cover;
   background-repeat: no-repeat;
@@ -306,9 +312,12 @@ body {
   cursor: pointer;
   border: none;
   font: inherit;
-  color: inherit;
+  color: rgb(150, 150, 150);
   background-color: transparent;
   font-size: 50px;
+}
+.choose__button:hover {
+  color: #f58974;
 }
 .room__card_data {
   padding-left: 22px;
@@ -358,4 +367,193 @@ body {
 }
 .room__card_button:hover {
   background-color: #f58974;
+}
+.customer__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.customer__cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.customer__header {
+  margin-top: 97px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+}
+.customer__cards_box {
+  display: flex;
+  margin-top: 45px;
+}
+.customer__card {
+  margin-bottom: 46px;
+  padding: 24px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 384px;
+  height: 190px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.customer__card_title {
+  display: flex;
+}
+.customer__title_image {
+  background-color: #a19ea8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.customer__title_data {
+  text-align: left;
+  margin-left: 19px;
+  margin-right: 98px;
+}
+.customer__name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333333;
+}
+.customer__live {
+  margin-top: 8px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #999999;
+}
+.customer__title_star {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ea9459;
+}
+.customer__card_text {
+  margin-top: 27px;
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+}
+.customer__button {
+  margin-bottom: 94px;
+  cursor: pointer;
+  border: none;
+  font: inherit;
+  color: #f4694c;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+.customer__button:hover {
+  color: #ac1f02;
+}
+.rentout__block__container {
+  height: 385px;
+  margin: 0 91px;
+  background: url(https://lirp.cdn-website.com/d53f4b3f99b243199fef237ca82e5c97/dms3rep/multi/opt/ThinkstockPhotos-178971294-1920w.jpg)
+    no-repeat right center;
+  background-size: cover;
+  background-color: #2d312f;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.rentout__block_header {
+  margin-top: 66px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+}
+.rentout__block_text {
+  margin-top: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+.rentout__block_button {
+  border-radius: 10px;
+  margin-top: 56px;
+  cursor: pointer;
+  width: 230px;
+  padding: 22px 39px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #0a0a0a;
+}
+.rentout__block_button:hover {
+  background-color: #505050;
+}
+.footer__box__container {
+  display: flex;
+  margin-top: 49px;
+}
+.footer__main {
+  margin-right: 191px;
+}
+.footer__main_header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+
+  letter-spacing: 0.005em;
+  color: #323232;
+}
+.footer__main_text {
+  margin-top: 16px;
+  width: 290px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #626262;
+}
+.footer__link {
+  margin-right: 191px;
+  margin-bottom: 53px;
+}
+.footer__link_header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer__link_text {
+  margin-top: 24px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer__endbox {
+  display: flex;
+  height: 62px;
+  background-color: #f4694c;
+}
+.endbox__copiryte {
+  margin: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
 }
