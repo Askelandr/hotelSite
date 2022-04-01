@@ -14,6 +14,11 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: `./index.html`,
     }),
+    new HTMLWebpackPlugin({
+      filename: "rooms.html",
+      template: "./rooms.html",
+      chunks: ["main"],
+    }),
     new CleanWebpackPlugin(),
   ],
   module: {

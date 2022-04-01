@@ -571,3 +571,30 @@ main {
 .footer__svg__pathin {
   fill: #f4694c;
 }
+/*---------------------ROOMS FILE-------------------------------------*/
+.main__rooms_block {
+  display: flex;
+}
+.rooms__block_image {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://cdnb-mws1.mouzenidis.com/userfiles/hotels/original/799/799_lreucsnd.nlc.jpg);
+  background-color: #2d312f;
+  width: 950px;
+  height: 572px;
+}
+.rooms_block_text {
+  text-align: center;
+
+  margin: auto;
+  padding: 74px 22px;
+  margin-left: -100px;
+  width: 618px;
+  height: 420px;
+  background-color: #323232;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  color: #ffffff;
+}
