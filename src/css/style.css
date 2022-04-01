@@ -98,10 +98,7 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-.menu {
-}
-.header__menu {
-}
+
 .menu__list {
   display: flex;
 }
@@ -115,7 +112,7 @@ body {
   font-weight: 500;
 }
 .header__button {
-  margin-right: 292px;
+  margin-right: 100px;
 }
 .button__header {
   font-family: "Poppins", sans-serif;
@@ -149,8 +146,7 @@ main {
   width: 100%;
   background: rgba(20, 39, 74, 0.5);
 }
-.main__image_block {
-}
+
 .block__header {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
