@@ -57,6 +57,9 @@ body {
   .block__image_smoll {
     display: none;
   }
+  .rooms__block_text {
+    font-size: 20px;
+  }
 }
 /*-----------Tablet--------------*/
 @media (max-width: 991.98px) {
@@ -70,6 +73,9 @@ body {
   }
   .booking__block_image {
     width: 50%;
+  }
+  .rooms__block_text {
+    font-size: 20px;
   }
 }
 /*-----------Mobail--------------*/
@@ -574,12 +580,12 @@ main {
 .rooms__block_image {
   object-fit: cover;
   background-repeat: no-repeat;
-  background-image: url(https://cdnb-mws1.mouzenidis.com/userfiles/hotels/original/799/799_lreucsnd.nlc.jpg);
+  background-image: url(https://www.messinialive.gr/wp-content/uploads/2018/07/ROOM-TO-LET-BY-THE-SEA-1000x600.jpg);
   background-color: #2d312f;
   width: 950px;
   height: 572px;
 }
-.rooms_block_text {
+.rooms__block_text {
   text-align: center;
 
   margin: auto;
