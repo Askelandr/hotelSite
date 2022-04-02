@@ -599,4 +599,56 @@ main {
   font-weight: 600;
   font-size: 64px;
   color: #ffffff;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+/*---------------------------------FACILITIES---------------------------------*/
+.facilities__box__container {
+  display: flex;
+  flex-direction: column;
+}
+.fatilities__header {
+  margin: auto;
+  margin-top: 76px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #f4694c;
+}
+.facilities__text {
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 250;
+  font-size: 25px;
+  color: #626262;
+}
+.facilities__image {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  height: 972.87px;
+
+  background-color: #2d312f;
+}
+
+.fatilities__button {
+  cursor: pointer;
+  margin: auto;
+  margin-top: 900px;
+  width: 573.3px;
+  height: 203.51px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f4694c;
+}
+.fatilities__button:hover {
+  background-color: #f58974;
 }
