@@ -652,3 +652,11 @@ main {
 .fatilities__button:hover {
   background-color: #f58974;
 }
+/*--------------------------------------CONTACTUS----------------------------------------------*/
+
+.maps__image {
+  object-fit: cover;
+  width: 100%;
+  height: 535px;
+  margin-bottom: 100px;
+}

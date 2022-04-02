@@ -24,6 +24,11 @@ module.exports = {
       template: "./facilities.html",
       chunks: ["main"],
     }),
+    new HTMLWebpackPlugin({
+      filename: "contactus.html",
+      template: "./contactus.html",
+      chunks: ["main"],
+    }),
     new CleanWebpackPlugin(),
   ],
   module: {
