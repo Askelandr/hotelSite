@@ -92,6 +92,7 @@ body {
     width: 50%;
   }
 }
+/*--------------------------------------------------------------------------*/
 .header {
   position: fixed;
   z-index: 1000;
@@ -440,7 +441,6 @@ main {
 .customer__card_text {
   margin-top: 27px;
   font-family: "Raleway";
-  font-style: italic;
   font-weight: 400;
   font-size: 14px;
   color: #999999;
