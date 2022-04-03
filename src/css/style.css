@@ -653,10 +653,121 @@ main {
   background-color: #f58974;
 }
 /*--------------------------------------CONTACTUS----------------------------------------------*/
-
+.contact__box__container {
+  display: flex;
+}
 .maps__image {
   object-fit: cover;
   width: 100%;
   height: 535px;
   margin-bottom: 100px;
+}
+.contact__box_data {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.box__data_header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 68px;
+  align-items: center;
+  color: #333535;
+}
+.box__data_data {
+  display: flex;
+  margin-bottom: 52px;
+}
+.data__image {
+  width: 33px;
+  height: 33px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.image__svg {
+  padding: 8px;
+  fill: none;
+}
+.data__text {
+  margin-left: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #333535;
+}
+.contact__box_form {
+  margin-left: 130px;
+  width: 66%;
+}
+.input__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.column {
+  display: flex;
+  width: 100%;
+}
+.box__form_column {
+  width: 50%;
+}
+
+.input {
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 43px;
+  width: 100%;
+  height: 53px;
+  font-family: "Poppins";
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #d5d5d5;
+  background: #ffffff;
+  box-shadow: 0px 4px 35px rgba(235, 235, 235, 0.25);
+  border-radius: 9px;
+}
+.textarea {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 57px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #d5d5d5;
+  background: #ffffff;
+  box-shadow: 0px 4px 35px rgba(235, 235, 235, 0.25);
+  border-radius: 9px;
+}
+.form__button {
+  margin-bottom: 56px;
+  cursor: pointer;
+  width: 178px;
+  height: 51px;
+  left: 784px;
+  top: 1347px;
+  background: #f4694c;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+}
+.form__button:hover {
+  background-color: #f58974;
 }
