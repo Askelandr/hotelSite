@@ -716,6 +716,7 @@ main {
   width: 100%;
 }
 .box__form_column {
+  margin-right: 10px;
   width: 50%;
 }
 
