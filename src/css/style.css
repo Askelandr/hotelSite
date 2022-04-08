@@ -1,4 +1,4 @@
-/*Обнуление*/
+/*-------------------Обнуление---------------------*/
 *,
 *::before,
 *::after {
@@ -93,9 +93,108 @@ body {
   }
 }
 /*--------------------------------------------------------------------------*/
+.modal__window_first {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #50505074;
+}
+.modal__window {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #50505074;
+}
+.modal__close_button {
+  cursor: pointer;
+  margin: 1% 0 0 97%;
+  width: 15px;
+  height: 15px;
+  background-color: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto";
+  color: #ac1f02;
+}
+.modal__window_inner {
+  display: flex;
+  flex-direction: column;
+
+  margin: 7.5% 15%;
+
+  width: 70%;
+  height: 70%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.modal__window_image {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-color: #2d312f;
+  width: 30%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.modal__window_booking {
+  display: flex;
+  height: 85%;
+  margin: 15px;
+}
+.window__booking_room {
+  width: 60%;
+  margin-left: 50px;
+}
+.booking__room_description {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  color: #5c5c5c;
+  width: 100%;
+}
+.booking__room_date {
+  display: flex;
+}
+.room__date_box {
+  width: 50%;
+}
+.date__box_text {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 15px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  color: #5c5c5c;
+}
+.date__box_input {
+  cursor: pointer;
+  height: 30px;
+  margin: 10px;
+  width: 90%;
+  padding: 3px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  color: #5c5c5c;
+  border-radius: 10px;
+  border-color: #999999;
+}
+
 .header {
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
   background-color: #f4694c;
   height: 117px;
@@ -286,7 +385,7 @@ main {
 .choose__block_rooms {
   margin-bottom: 86px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .too__block_rooms {
@@ -297,7 +396,7 @@ main {
   display: flex;
   margin: 0 40px;
   margin-bottom: 20px;
-  width: 277px;
+  width: 245px;
   height: 367px;
   /* background: url(https://www.hotrec.eu/wp-content/uploads/2018/04/accessibility.jpg)
     no-repeat right center; */
@@ -320,14 +419,14 @@ main {
   font-size: 50px;
 }
 .choose__button:hover {
-  color: #f58974;
+  opacity: 0.7;
 }
 .room__card_data {
   padding-left: 22px;
   text-align: left;
   background-color: #ffffff;
   width: 100%;
-  height: 35%;
+  height: 42%;
   margin-top: 87%;
   border-radius: 0 0 20px 20px;
 }
@@ -737,6 +836,13 @@ main {
   background: #ffffff;
   box-shadow: 0px 4px 35px rgba(235, 235, 235, 0.25);
   border-radius: 9px;
+}
+.error__input {
+  opacity: 0;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #d02502;
+  margin-bottom: 5px;
 }
 .textarea {
   cursor: pointer;
