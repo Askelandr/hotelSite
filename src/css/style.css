@@ -77,6 +77,10 @@ body {
   .rooms__block_text {
     font-size: 20px;
   }
+
+  .modal__window_image {
+    display: none;
+  }
 }
 /*-----------Mobail--------------*/
 @media (max-width: 767.98px) {
@@ -90,6 +94,10 @@ body {
   }
   .booking__block_image {
     width: 50%;
+  }
+
+  .modal__window_image {
+    display: none;
   }
 }
 /*--------------------------------------------------------------------------*/
@@ -144,6 +152,7 @@ body {
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .modal__window_booking {
+  overflow: auto;
   display: flex;
   height: 85%;
   margin: 15px;
