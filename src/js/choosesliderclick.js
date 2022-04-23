@@ -1,3 +1,9 @@
+/**
+ * Функция инициализации слайдера
+ * @param {element} buttons нажимаемая кнопка
+ * @param {Array} elems массив элементов слайдера
+ * @param {string} id id нажимаемой кнопки слайдера
+ */
 export default function chooseSliderClick(buttons, elems, id) {
   document.addEventListener("click", (e) => {
     let i = id.slice(-1);

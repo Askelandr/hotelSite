@@ -12,7 +12,7 @@ export default function validInputName(selectorInput, selectorError) {
   errorNameInput.style.opacity = 0;
   if (myName === "") {
     errorNameInput.style.opacity = 0;
-    errorNameInput.innerHTML = "Поле должно быть заполнено";
+    errorNameInput.innerHTML = "Enter the data";
     errorNameInput.style.opacity = 1;
     return;
   } else {

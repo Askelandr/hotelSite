@@ -6,7 +6,6 @@ import closeModal from "./js/closemodal";
 
 import chooseSliderClick from "./js/choosesliderclick";
 import validAndClose from "./js/validandclose";
-import getDate from "./js/getdate";
 
 // Слайдер бронирования
 let chooseButton = document.querySelectorAll(".choose__button");
@@ -39,9 +38,6 @@ scrolIntowiewElem(rentNow, chooseBlock);
 //Инициализация элементов модального окна
 
 let arrivalDate = document.querySelector("#arrival-input");
-let departureDate = document.querySelector("#departure-input");
-arrivalDate.value = getDate();
-departureDate.value = getDate();
 
 let imageModalWindow = document.querySelector(".modal__window_image");
 let textModalWindow = document.querySelector(".booking__room_description");

@@ -309,12 +309,25 @@
 
             <div class="booking__room_date">
               <div class="room__date_box">
-                <h3 class="date__box_text">Arrival date</h3>
-                <input type="date" class="date__box_input" />
+                <h3 class="date__box_text" id="arrival-date">Arrival date</h3>
+                <input
+                  type="date"
+                  class="date__box_input"
+                  value=""
+                  id="arrival-input"
+                  tabindex="1"
+                />
               </div>
               <div class="room__date_box">
-                <h3 class="date__box_text">Departure date</h3>
-                <input type="date" class="date__box_input" />
+                <h3 class="date__box_text" id="departure-date">
+                  Departure date
+                </h3>
+                <input
+                  type="date"
+                  class="date__box_input"
+                  id="departure-input"
+                  tabindex="2"
+                />
               </div>
             </div>
             <div class="booking__room_date">
@@ -327,6 +340,7 @@
                   class="date__box_input"
                   id="modal-first-name"
                   placeholder="Yours first name"
+                  tabindex="3"
                 />
               </div>
               <div class="room__date_box">
@@ -338,6 +352,7 @@
                   class="date__box_input"
                   id="modal-last-name"
                   placeholder="Yours last name"
+                  tabindex="4"
                 />
               </div>
             </div>
@@ -350,6 +365,7 @@
                 class="date__box_input"
                 placeholder="Yours email"
                 id="modal-email"
+                tabindex="4"
               />
             </div>
             <div>

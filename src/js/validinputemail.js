@@ -14,12 +14,12 @@ export default function validInputEmail(selectorInput, selectorError) {
   let valid = re.test(myMail);
 
   if (myMail === "") {
-    errorEmailInput.innerHTML = "Поле должно быть заполнено";
+    errorEmailInput.innerHTML = "Enter the data";
     errorEmailInput.style.opacity = 1;
     return;
   } else if (!valid) {
     errorEmailInput.style.opacity = 0;
-    errorEmailInput.innerHTML = "Введен некорректный email";
+    errorEmailInput.innerHTML = "Incorrect email";
     errorEmailInput.style.opacity = 1;
     return;
   } else {
