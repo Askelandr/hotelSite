@@ -1,35 +1,40 @@
 const path = require(`path`);
-const HTMLWebpackPlugin = require(`html-webpack-plugin`);
-const { CleanWebpackPlugin } = require(`clean-webpack-plugin`);
+const miniCss = import(`mini-css-extract-plugin`);
+const entryPoints = import("./src/index.js");
+const HTMLWebpackPlugin = import(`html-webpack-plugin`);
+const { CleanWebpackPlugin } = import(`clean-webpack-plugin`);
+const extractCSS = new ExtractTextPlugin("css/[name].style.min.css");
 module.exports = {
-  entry: {
-    main: `./index.js`,
-  },
+  entry: entryPoints,
   output: {
     filename: `[name].[contenthash].js`,
     path: path.resolve(__dirname, `dist`),
   },
   context: path.resolve(__dirname, `src`),
   plugins: [
+    extractCSS,
     new HTMLWebpackPlugin({
-      template: `./index.html`,
+      filename: "index.html",
+      template: "./src/index.html",
+      chunks: ["main"],
     }),
     new HTMLWebpackPlugin({
       filename: "rooms.html",
       template: "./rooms.html",
-      chunks: ["main"],
+      chunks: ["rooms"],
     }),
     new HTMLWebpackPlugin({
       filename: "facilities.html",
       template: "./facilities.html",
-      chunks: ["main"],
+      chunks: ["facilities"],
     }),
     new HTMLWebpackPlugin({
       filename: "contactus.html",
       template: "./contactus.html",
-      chunks: ["main"],
+      chunks: ["contactus"],
     }),
     new CleanWebpackPlugin(),
+    new miniCss({ filename: "./src/css/style.scc" }),
   ],
   module: {
     rules: [
@@ -37,10 +42,10 @@ module.exports = {
         test: /\.(html)$/,
         use: ["html-loader"],
       },
-      {
-        test: /\.css$/,
-        use: [`style-loader`, `css-loader`],
-      },
+      // {
+      //   test: /\.css$/,
+      //   use: [`style-loader`, `css-loader`],
+      // },
 
       // {
       //   test: /\.(png|jpe?g|svg|gif)$/,
@@ -52,8 +57,9 @@ module.exports = {
       //   loader: "url",
       // },
       {
-        test: /\.s[ac]ss$/i,
+        test: /.(s*)css$/,
         use: [
+          miniCss.loader,
           // Creates `style` nodes from JS strings
           "style-loader",
           // Translates CSS into CommonJS
@@ -63,5 +69,8 @@ module.exports = {
         ],
       },
     ],
+  },
+  optimization: {
+    minimizer: [new minify({})],
   },
 };

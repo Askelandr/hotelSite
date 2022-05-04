@@ -1,4 +1,5 @@
 import "./css/style.css";
+import "./scss/main.scss";
 import json from "./json/room.json";
 import scrolIntowiewElem from "./js/scrolintowiewelem";
 
